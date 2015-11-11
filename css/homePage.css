@@ -1,0 +1,125 @@
+/* ========== HERO IMAGE ========== */
+
+#hero-image {
+	background-image: url('http://world-visits.com/wp-content/uploads/2011/11/Thailand-Beaches-2.jpg');
+	background-size: cover;
+}
+
+#hero-title {
+	font-size: 100px;
+	text-shadow: 2px 2px #000000;
+	color: white;
+	text-align: center;
+	padding-top: 300px;
+	padding-bottom: 300px;
+	margin: 0px;
+}
+
+/* ========== END ========== /
+
+
+/* ========== COUNTRIES ========== */
+
+#countries-container {
+	background-color: #f4f4f4;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.countries {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: auto;
+	color: #494949;
+	box-sizing: border-box;
+}
+
+.countries-header {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.countries-images {
+	display: flex;
+	padding-top: 30px;
+}
+
+.countries-image {
+	width: 30%;
+	background-size: cover;
+	height: 300px;
+	background-position: bottom;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#korea {
+	background-image: url(http://allworldtowns.com/data_images/countries/korea/korea-08.jpg);
+}
+
+#thailand {
+	background-image: url(http://www.anu.edu.au/files/styles/anu_full_920_518/public/engagement-opportunity/thailand.jpg?itok=ocOzfvrc);
+}
+
+#china {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/10/20090529_Great_Wall_8185.jpg);
+}
+
+.countries-title {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* ========== END ========== */
+
+
+/* ========== SALES PITCH ========== */
+
+#sales-container {
+	background-color: #f8f8f8;
+	display: flex;
+}
+
+.sales-pitch {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 2px;
+	width: auto;
+	color: #000;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+.sales-header {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* ========== END ========== */
+
+/* ========== FOOTER ========== */
+
+#footer {
+	background-color: #d9534f;
+	height: 200px;
+	bottom: 0;
+}
+
+
+/* ========== END ========== */
+
+
+/* ========== END ========== */

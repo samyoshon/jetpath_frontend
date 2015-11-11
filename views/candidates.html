@@ -1,0 +1,13 @@
+<span ng-controller='UsersController as users'>
+
+	<h1>List of resumes</h1>
+
+	{{users.all}}
+	
+	<div ng-repeat='user in users.all | filter: {'postedjobs': curr_user}: true'>
+		<h1>{{user.firstname}} {{user.lastname}}</h1>
+		<div>{{user.gender}}</div>
+		<div>{{user.photo}}</div>
+	</div>
+
+</span>

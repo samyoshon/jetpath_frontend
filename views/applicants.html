@@ -1,0 +1,15 @@
+<span ng-controller='UsersController as users'>
+<!-- Form for resume posting -->
+<form ng-submit='users.registerUser()'>
+    <label for='job-company-name'>First Name: <input type='text' id='job-company-name' ng-model='users.newUser.firstname' required/></br>
+    <label for=''>Last Name: <input type='text' id='' ng-model='users.newUser.lastname' required/></br>
+    <label for=''>Gender:  <input type='radio' name='sex' value='male' ng-model='users.newUser.gender'>Male <input type='radio' name='sex' value='female' ng-model='users.newUser.gender'>Female</br>
+    <label for=''>Birthdate: <input type='text' id='' ng-model='users.newUser.birthdate' required/></br>
+    <label for=''>Nationality: <input type='textarea' id='' ng-model='users.newUser.nationality' required/></br>
+    <label for=''>Resume: <input type='file' id='' ng-model='users.newUser.resume' accept='application/msword, application/pdf'required/></br>
+    <label for=''>Photo: <input type='file' id='' ng-model='users.newUser.photo' name='pic' accept='image/*' required/></br>
+    <label for=''>Skype ID: <input type='text' id='' ng-model='users.newUser.skypeid'></br>
+
+    <input type='submit' value='Register'/>
+</form>
+</span>

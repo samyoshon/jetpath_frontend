@@ -1,0 +1,66 @@
+#jobFilters {
+	box-sizing: border-box;
+	border: 1px solid gray;
+}
+
+.job-filter {
+	padding: 20px;
+}
+
+#jobListing {
+	border: 1px solid gray;
+	box-sizing: border-box;
+	padding: 25px;
+}
+
+#jobListing:hover {
+	border-bottom: 5px solid #4b87bb;
+	background-color: #f7f7f7;
+}
+
+.buttonsContainer {
+	padding-bottom: 10px;
+}
+
+.jobBoard {
+	width: 100%;
+	opacity: 1;
+	transition: .5s opacity;
+	position: relative;
+}
+
+.jobBoard.transition {
+	opacity: 0;
+}
+
+.jobAll {
+	width: 85%;
+	z-index: 1;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.jobBanner {
+	width: 100%;
+}
+
+.jobDetails {
+	border-bottom: 2px dotted gray;
+	color: red;
+}
+
+#jobFilters {
+	margin-top: 20px;
+}
+
+.jobLists {
+	cursor: pointer;
+	padding: 20px;
+}
+
+.textFieldEdit {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid black;
+	background: none;
+}

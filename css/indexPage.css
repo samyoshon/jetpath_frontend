@@ -1,0 +1,17 @@
+/* ========== NAV BAR ========== */
+
+.navbar {
+	margin-bottom: 0px !important;
+}
+
+.nav .btn {
+	margin-top: 8px;
+	margin-right: 8px;
+}
+
+.navbar-right {
+	float: right;
+}
+
+/* ========== END ========== */
+
