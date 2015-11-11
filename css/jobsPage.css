@@ -1,24 +1,68 @@
-#jobFilters {
-	box-sizing: border-box;
-	border: 1px solid gray;
+/* ========== BANNER ========== */
+
+.job-banner-image {
+	background-image: url('images/hero-banner.jpg');
+	background-size: cover;
 }
 
-.job-filter {
+.banner-texts {
+	padding: 70px;
+}
+
+.banner-text {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-shadow: 1px 1px #444444;
+}
+
+#banner-header {
+	font-size: 55px;
+}
+
+/* ========== END ========== */
+
+/* ========== JOB FITLERS ========== */
+
+
+.job-all-container {
+	padding: 40px;
+	background-color: #f8f8f8;
+}
+
+#job-filters {
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+#job-filter {
 	padding: 20px;
 }
 
+/* ========== END ========== */
+
+/* ========== JOB LISTINGS ========== */
+
 #jobListing {
-	border: 1px solid gray;
+	border: 2px ridge #f8f8f8;
 	box-sizing: border-box;
-	padding: 25px;
+	padding: 30px;
 }
 
 #jobListing:hover {
 	border-bottom: 5px solid #4b87bb;
-	background-color: #f7f7f7;
+	background-color: white;
 }
 
-.buttonsContainer {
+/* ========== END ========== */
+
+.job-buttons-container {
 	padding-bottom: 10px;
 }
 
@@ -33,24 +77,9 @@
 	opacity: 0;
 }
 
-.jobAll {
-	width: 85%;
-	z-index: 1;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.jobBanner {
-	width: 100%;
-}
-
 .jobDetails {
 	border-bottom: 2px dotted gray;
 	color: red;
-}
-
-#jobFilters {
-	margin-top: 20px;
 }
 
 .jobLists {
