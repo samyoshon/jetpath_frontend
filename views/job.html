@@ -2,22 +2,24 @@
 
 <div class='jobBoard' ng-class="{'transition': jobs.isTransitioning}">
 
-	<img class='jobBanner' src="../css/images/hero-banner.jpg"/>
-
-	<div class='container-fluid'>
-		<div class='row'></div>
+	<div class="job-banner-image">
+		<div class="banner-texts">
+			<h1 class="banner-text" id="banner-header">Go Discover</h1>
+			<p class="banner-text">Find the job that allows you to travel the world</p>
+		</div>
 	</div>
 
-	<div class='jobAll'>
-		<div id='jobFilters' class='col-xs-3 col-sm-3 col-md-3'>
-		  <div class='col-xs-12 col-sm-12 col-md-12 job-filter'>
-		    <label>Coutry</label>
-		    <select class="form-control" ng-model="jobs.selectedCountry" ng-options="country for country in jobs.countries"></select>
-		  </div>
-		  <div class='col-xs-12 col-sm-12 col-md-12 job-filter'>
-		    <label>Compensation</label>
-		    <input type="search" class="form-control" ng-model="vm.search" placeholder="search...">
-		  </div>
+	<div class='job-all-container'>
+		<div class='row'>
+		<div id='job-filters' class='col-xs-3 col-sm-3 col-md-3'>
+			<div class='col-xs-12 col-sm-12 col-md-12' id='job-filter'>
+				<label>Coutry</label>
+		    	<select class="form-control" ng-model="jobs.selectedCountry" ng-options="country for country in jobs.countries"></select>
+			</div>
+			<div class='col-xs-12 col-sm-12 col-md-12' id='job-filter'>
+		    	<label>Compensation</label>
+		    	<input type="search" class="form-control" ng-model="vm.search" placeholder="search...">
+			</div>
 		</div>
 		<!-- End -->
 
@@ -25,44 +27,44 @@
 			<div ng-repeat='job in jobs.all | filter: jobs.selectedCountry' class='row' id='jobListing'>
 
 			<!-- Hidden Apply Buttons -->
-			  <div ng-show='showDetails' class='buttonsContainer'>
-			    <button type='button' ng-click='jobs.jobApply(job)' class='btn btn-primary'>Apply</button>
-			    <button type='button' ng-click='jobs.jobSave()' class='btn btn-default'>Save Job</button>
-			  </div>
-			<!-- End -->
-			<div ng-click='showDetails = !showDetails' id="mainJob">
-			  <h4>{{job.name}}</h4>
-			  <div>{{job.title}}</div>
-			  <div>{{job.description}}</div>
-			  <div>{{job.country}}</div>
+				<div ng-show='showDetails' class='job-buttons-container'>
+				    <button type='button' ng-click='jobs.jobApply(job)' class='btn btn-primary'>Apply</button>
+				    <button type='button' ng-click='jobs.jobSave()' class='btn btn-default'>Save Job</button>
+				</div>
+				<!-- End -->
+				<div ng-click='showDetails = !showDetails' id="mainJob">
+					<h4>{{job.name}}</h4>
+					<div>{{job.title}}</div>
+					<div>{{job.description}}</div>
+					<div>{{job.country}}</div>
+				</div>
+
+				<!-- Hidden Addt'l Info Section -->
+				<div ng-show='showDetails' ng-click='showDetails = !showDetails'>
+				  	<div class='jobDetails'>
+					    <div>{{job.compensation.low}}</div>
+					    <div>{{job.compensation.high}}</div>
+					</div>
+
+					<div class='jobDetails'>
+						<div>{{job.benefits}}</div>
+					</div>
+
+					<div class='jobDetails'>
+						<div>{{job.qualifications}}</div>
+					</div>
+
+					<div class='jobDetails'>
+						<div>{{job.preferences}}</div>
+					</div>
+
+					<div class='jobDetails'>
+				    	<div>{{job.additional}}</div>
+				    </div>
+				</div>
 			</div>
-
-			<!-- Hidden Addt'l Info Section -->
-			  <div ng-show='showDetails' ng-click='showDetails = !showDetails'>
-			  	<div class='jobDetails'>
-				    <div>{{job.compensation.low}}</div>
-				    <div>{{job.compensation.high}}</div>
-				</div>
-
-				<div class='jobDetails'>
-					<div>{{job.benefits}}</div>
-				</div>
-
-				<div class='jobDetails'>
-					<div>{{job.qualifications}}</div>
-				</div>
-
-				<div class='jobDetails'>
-					<div>{{job.preferences}}</div>
-				</div>
-
-				<div class='jobDetails'>
-			    	<div>{{job.additional}}</div>
-			    </div>
-
-			</div>
-	</div>
-	</div>
+		</div>
 	<!-- End -->
+	</div>
 	</div>
 </div>
