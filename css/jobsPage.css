@@ -56,18 +56,16 @@
 }
 
 #jobListing:hover {
-	border-bottom: 5px solid #4b87bb;
+	border-bottom: 3px solid #4b87bb;
+	border-right: 1px solid #4b87bb;
 	background-color: white;
 }
-
-/* ========== END ========== */
 
 .job-buttons-container {
 	padding-bottom: 10px;
 }
 
 .jobBoard {
-	width: 100%;
 	opacity: 1;
 	transition: .5s opacity;
 	position: relative;
@@ -78,8 +76,11 @@
 }
 
 .jobDetails {
-	border-bottom: 2px dotted gray;
-	color: red;
+	border-bottom: 1px dotted #4b87bb;
+}
+
+.job-details-key {
+	font-size: 15px;
 }
 
 .jobLists {
@@ -93,3 +94,5 @@
 	border: 1px solid black;
 	background: none;
 }
+
+/* ========== END ========== */
