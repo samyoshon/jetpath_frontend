@@ -36,30 +36,25 @@
 					<h4>{{job.name}}</h4>
 					<div>{{job.title}}</div>
 					<div>{{job.description}}</div>
-					<div>{{job.country}}</div>
+					<div>{{job.country[0]}}</div>
 				</div>
 
 				<!-- Hidden Addt'l Info Section -->
 				<div ng-show='showDetails' ng-click='showDetails = !showDetails'>
 				  	<div class='jobDetails'>
-					    <div>{{job.compensation.low}}</div>
-					    <div>{{job.compensation.high}}</div>
+					    <div><h4 class='job-details-key'>Compensation:</h4> {{job.compensation[0].low}} - {{job.compensation[0].high}}</div>
 					</div>
 
 					<div class='jobDetails'>
-						<div>{{job.benefits}}</div>
+						<div><h4 class='job-details-key'>Benefits:</h4> {{job.benefits}}</div>
 					</div>
 
 					<div class='jobDetails'>
-						<div>{{job.qualifications}}</div>
+						<div><h4 class='job-details-key'>Qualifications:</h4> {{job.qualifications}}</div>
 					</div>
 
 					<div class='jobDetails'>
-						<div>{{job.preferences}}</div>
-					</div>
-
-					<div class='jobDetails'>
-				    	<div>{{job.additional}}</div>
+				    	<div><h4 class='job-details-key'>Additional Info:</h4> {{job.additional}}</div>
 				    </div>
 				</div>
 			</div>
