@@ -1,15 +1,15 @@
 /* ========== BANNER ========== */
 
-.job-banner-image {
+.job-page-banner-image {
 	background-image: url('images/hero-banner.jpg');
 	background-size: cover;
 }
 
-.banner-texts {
+.job-page-banner-texts {
 	padding: 70px;
 }
 
-.banner-text {
+.job-page-banner-text {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -22,7 +22,7 @@
 	text-shadow: 1px 1px #444444;
 }
 
-#banner-header {
+#job-page-banner-header {
 	font-size: 55px;
 }
 
