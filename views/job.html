@@ -33,10 +33,10 @@
 				</div>
 				<!-- End -->
 				<div ng-click='showDetails = !showDetails' id="mainJob">
-					<h4>{{job.name}}</h4>
-					<div>{{job.title}}</div>
-					<div>{{job.description}}</div>
-					<div>{{job.country[0]}}</div>
+					<h4>{{job.title}}</h4>
+					<div><strong>Company:</strong> {{job.name}}</div>
+					<div><strong>Description:</strong> {{job.description}}</div>
+					<div><strong>Location:</strong> {{job.city}}, {{job.country[0]}}</div>
 				</div>
 
 				<!-- Hidden Addt'l Info Section -->
