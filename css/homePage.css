@@ -114,7 +114,7 @@
 /* ========== TESTIMONIALS ========== */
 
 #sales-container {
-	background-color: #f8f8f8;
+	background-color: white;
 	display: flex;
 }
 
@@ -140,6 +140,37 @@
 /* ========== END ========== */
 
 
+/* ========== TESTIMONIALS ========== */
+
+#testimonials-container {
+	background-color: #f8f8f8;
+	display: flex;
+}
+
+.testimonials {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 2px;
+	width: auto;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+#testimonials-title {
+	font-weight: bold;
+}
+
+#testimonials-paragraph {
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+
+/* ========== END ========== */
+
+
 /* ========== FOOTER ========== */
 
 #footer {
@@ -147,6 +178,5 @@
 	height: 200px;
 	bottom: 0;
 }
-
 
 /* ========== END ========== */
