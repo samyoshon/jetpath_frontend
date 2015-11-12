@@ -28,7 +28,7 @@
             <label>
                 <div class="col-xs-4 col-sm-4 col-md-4">Country: </div>
                 <select rows="2" class="inputFieldEdit col-xs-8 col-sm-8 col-md-8" ng-click='editForm = !editForm' ng-model='jobs.newJob.country'/>
-                    <option ng-repeat="job in jobs.all" value="{{job.country[0]}}" required>{{job.country[0]}}</option>
+                    <option ng-repeat="job in jobs.all | orderBy: 'country'" value="{{job.country[0]}}" required>{{job.country[0]}}</option>
                 </select>
             </label>
 
