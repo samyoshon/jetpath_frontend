@@ -110,6 +110,36 @@
 
 /* ========== END ========== */
 
+
+/* ========== TESTIMONIALS ========== */
+
+#sales-container {
+	background-color: #f8f8f8;
+	display: flex;
+}
+
+.sales-pitch {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 2px;
+	width: auto;
+	color: #000;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+.sales-header {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* ========== END ========== */
+
+
 /* ========== FOOTER ========== */
 
 #footer {
@@ -117,9 +147,6 @@
 	height: 200px;
 	bottom: 0;
 }
-
-
-/* ========== END ========== */
 
 
 /* ========== END ========== */
