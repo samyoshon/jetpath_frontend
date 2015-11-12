@@ -15,3 +15,27 @@
 
 /* ========== END ========== */
 
+/* ========== FOOTER ========== */
+
+#footer {
+	background-color: #d9534f;
+	height: 200px;
+	bottom: 0;
+}
+
+.footer-links {
+	float: right;
+	padding: 20px;
+}
+
+.footer-links ul {
+	float: right;
+	list-style-type: none;
+}
+
+.footer-links li a {
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+/* ========== END ========== */

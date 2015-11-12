@@ -143,7 +143,9 @@
 /* ========== TESTIMONIALS ========== */
 
 #testimonials-container {
-	background-color: #f8f8f8;
+	background-image: url(http://www.lovethesepics.com/wp-content/uploads/2013/06/Famous-Kyoto-Bamboo-Forest.jpg);
+	background-size: cover;
+	background-position: 100% 77%;
 	display: flex;
 }
 
@@ -159,24 +161,14 @@
 	padding: 20px;
 }
 
-#testimonials-title {
+.testimonials-content {
 	font-weight: bold;
+	color: white;
 }
 
 #testimonials-paragraph {
 	margin-bottom: 0px;
 	font-size: 18px;
-}
-
-/* ========== END ========== */
-
-
-/* ========== FOOTER ========== */
-
-#footer {
-	background-color: #d9534f;
-	height: 200px;
-	bottom: 0;
 }
 
 /* ========== END ========== */
