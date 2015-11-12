@@ -1,28 +1,62 @@
 <h1>Post a job</h1>
 
 <!-- Form for job posting -->
-<form ng-submit='jobs.postJob()'>
-    <label>Company Name: <input rows="2" class="inputFieldEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.name'/></label>
+<div class="col-xs-12 col-sm-12 col-md-12 main-form-container">
+<div class="form-container" id="form-box">
+    <form ng-submit='jobs.postJob()'>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">Company Name: </div>
+            <input rows="2" class="inputFieldEdit col-xs-8 col-sm-8 col-md-8" ng-model='jobs.newJob.name'/>
+        </label>
 
-    <label>Job Title: <input rows="2" class="inputFieldEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.title'/></label>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">Job Title: </div>
+            <input rows="2" class="inputFieldEdit col-xs-8 col-sm-8 col-md-8" ng-click='editForm = !editForm' ng-model='jobs.newJob.title'/>
+        </label>
 
-    <label>Job Description: <input rows="2" class="inputFieldEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.description'/></label>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">Job Description: </div>
+            <input rows="2" class="inputFieldEdit col-xs-8 col-sm-8 col-md-8" ng-click='editForm = !editForm' ng-model='jobs.newJob.description'/>
+        </label>
 
-    <label>Country: <input rows="2" class="inputFieldEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.country'/></label>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">Country: </div>
+            <select rows="2" class="inputFieldEdit col-xs-8 col-sm-8 col-md-8" ng-click='editForm = !editForm' ng-model='jobs.newJob.country'/>
+                <option ng-repeat="job in jobs.all" value="{{job.country[0]}}">{{job.country[0]}}</option>
+            </select>
+        </label>
 
-    <label>Address: <input rows="2" class="inputFieldEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.address'/></label>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">Address: </div>
+            <input rows="2" class="inputFieldEdit col-xs-8 col-sm-8 col-md-8" ng-click='editForm = !editForm' ng-model='jobs.newJob.address'/>
+        </label>
 
-    <label>Compensation: <input rows="2" class="inputFieldEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.compsensation.low'/></label>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">Compensation: </div>
+            <input rows="2" class="inputFieldEdit" ng-click='editForm = !editForm' ng-model='jobs.newJob.compsensation[0].low' placeholder='low'/> - <input rows="2" class="inputFieldEdit" ng-click='editForm = !editForm' ng-model='jobs.newJob.compsensation[0].high' placeholder='high'/>
+        </label>
 
-    <label>Compensation: <input rows="2" class="inputFieldEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.compsensation.high'/></label>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">Benefits: </div>
+            <textarea rows="2" class="textAreaEdit" ng-click='editForm = !editForm' ng-model='jobs.newJob.benefits'></textarea>
+        </label>
 
-    <label>Benefits: <textarea rows="2" class="textAreaEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.benefits'></textarea></label>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">Qualifications: </div>
+            <textarea rows="2" class="textAreaEdit" ng-click='editForm = !editForm' ng-model='jobs.newJob.qualifications'></textarea>
+        </label>
 
-    <label>Qualifications: <textarea rows="2" class="textAreaEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.qualifications'></textarea></label>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">Additional Info: </div>
+            <textarea rows="2" class="textAreaEdit" ng-click='editForm = !editForm' ng-model='jobs.newJob.additional'></textarea>
+        </label>
 
-    <label>Preferences: <textarea rows="2" class="textAreaEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.preferences'></textarea></label>
+        <label>
+            <div class="col-xs-4 col-sm-4 col-md-4">How to Apply: </div>
+            <textarea rows="2" class="textAreaEdit" ng-click='editForm = !editForm' ng-model='jobs.newJob.apply'></textarea>
+        </label>
 
-    <label>Additional Info: <textarea rows="2" class="textAreaEdit form-control" ng-click='editForm = !editForm' ng-model='jobs.newJob.additional'></textarea></label>
-
-    <input type='submit' value='Post Job'/>
-</form>
+        <input class="btn btn-default" id="submit-button" type='submit' value='Post Job'/>
+    </form>
+</div>
+</div>
