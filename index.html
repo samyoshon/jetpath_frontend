@@ -51,7 +51,16 @@
   </section>
 
 
-    <div class="col-xs-12 col-sm-12 col-md-12" id="footer"></div>
+    <div class="col-xs-12 col-sm-12 col-md-12" id="footer">
+      <div class="footer-links">
+        <ul>
+          <li><a ui-sref="jobs" ui-sref-active="active" ng-click="jobs.transition()">Search Jobs</a></li>
+          <li><a ui-sref="new" ui-sref-active="active" ng-click="jobs.transition()">Post Jobs</a></li>
+          <li><a ui-sref="#" ui-sref-active="active" ng-click="jobs.transition()">About Us</a></li>
+          <li><a ui-sref="#" ui-sref-active="active" ng-click="jobs.transition()">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
 
 </body>
 </html>
