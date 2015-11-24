@@ -18,13 +18,13 @@ function UsersController ($http, jobsFactory, $timeout, $window){
 	getUsers();
 
 	//SET UP $HTTP REQUEST TO GET ALL JOBS //
-	// function getUsers(){
-	// 	$http
-	// 		.get('http://localhost:3000/users')
-	// 		.then(function(response){
-	// 			self.all = response.data.users;
-	// 	});
-	// }
+	function getUsers(){
+		$http
+			.get('http://localhost:3000/users')
+			.then(function(response){
+				self.all = response.data.users;
+		});
+	}
 	// END //
 
 	//SET UP TO TRANSITION BETWEEN PAGES //
