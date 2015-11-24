@@ -30,7 +30,8 @@ function JobsController ($http, jobsFactory, $timeout){
 	//SET UP $HTTP REQUEST TO GET ALL JOBS //
 	function getJobs(){
 		$http
-			.get('http://localhost:3000/jobs')
+			.get('http://
+pacific-plains-9050.herokuapp.com')
 			.then(function(response){
 				self.all = response.data.jobs;
 				// ALLOWS FILTER BY COUNTRIES
@@ -62,7 +63,8 @@ function JobsController ($http, jobsFactory, $timeout){
 
 	//ALLOW EMPLOYERS TO POST JOBS //
 	function postJob() {
-		$http.post('http://localhost:3000/jobs', self.newJob)
+		$http.post('http://
+pacific-plains-9050.herokuapp.com', self.newJob)
 			.then(function(response){
 			console.log(response);
 			getJobs();
@@ -76,7 +78,8 @@ function JobsController ($http, jobsFactory, $timeout){
 		// var url = 'http://localhost:3000/apply/' + job._id;
 		var curr_user = JSON.parse(window.localStorage.getItem("curr_user"));
 		$http
-			.post('http://localhost:3000/apply', {job: job, user: curr_user})
+			.post('
+pacific-plains-9050.herokuapp.com', {job: job, user: curr_user})
 			.then(function(response){
 				console.log(response);
 		});
